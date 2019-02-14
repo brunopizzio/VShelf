@@ -1,0 +1,24 @@
+{
+  "name": "vshelf",
+  "version": "1.0.0",
+  "description": "Organize your Readings.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunopizzio/VShelf.git"
+  },
+  "author": "Bruno Pizzio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunopizzio/VShelf/issues"
+  },
+  "homepage": "https://github.com/brunopizzio/VShelf#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.12"
+  }
+}
