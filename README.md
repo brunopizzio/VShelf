@@ -1,8 +1,8 @@
 # VShelf
 Organize your Readings.
 
-- [ ] Criar estrutura de pastas
-- [ ] Iniciar projeto com NPM
+- [x] Criar estrutura de pastas
+- [x] Iniciar projeto com NPM
 - [ ] Criar rotas da API
   - [ ] Adicionar livro
   - [ ] Editar livro
