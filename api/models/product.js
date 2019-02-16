@@ -1,9 +1,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-/*
- * Livro:
- * 
+/*      Livro:
  * -> Id: int
  * -> Titulo: String
  * -> Autor: String

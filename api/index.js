@@ -43,7 +43,7 @@ router.route('/books')
     book.save(function(error){
        if(error)
             res.send('Erro ao tentar salvar o livro'+error);
-        res.json({message: 'Livro cadastrado com sucesso!'}); 
+        res.json({message:'Livro cadastrado com sucesso!'}); 
     });
 })
 
@@ -51,7 +51,7 @@ router.route('/books')
 .get(function(req, res) {
     Book.find(function(error, books){
         if(error)
-            res.send('Erro ao tentar selecionas todos os livros'+error)
+            res.send('Erro ao tentar selecionar todos os livros'+error)
         res.json(books);
     });
 });
@@ -88,25 +88,23 @@ router.route('/books/:book_id')
         });
     })
 
+// Deletar livro por ID
     .delete(function(req, res){
         Book.remove({
             _id: req.params.book_id
             }, function(error){
                 if(error)
-                    res.send('ID do produto não encontrado'+error);
+                    res.send('ID do livro não encontrado'+error);
                 res.json({ message: 'Livro deletado com sucesso!'});
             });
          });
 
-
-
-
 // Definindo um padrão das rotas prefixadas: '/api'
-app.use('/api', router);
+    app.use('/api', router);
 
 // Iniciando o servidor
-app.listen(port, () => {
-    console.log(`Servidor rodando em http://localhost:${port}`)
-    console.log('Para derrubar o servidor: ctrl + c');
-});
+    app.listen(port, () => {
+        console.log(`Servidor rodando em http://localhost:${port}`)
+        console.log('Para derrubar o servidor: ctrl + c');
+    });
 
