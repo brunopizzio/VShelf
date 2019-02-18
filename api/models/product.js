@@ -1,5 +1,5 @@
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+var mongoose = require('mongoose')
+var Schema = mongoose.Schema
 
 /*      Livro:
  * -> Id: int
@@ -9,11 +9,11 @@ var Schema = mongoose.Schema;
  * -> Descricao: String
  */
 
- var BookSchema = new Schema({
-    titulo: String,
-    autor: String,
-    paginas: Number,
-    descricao: String
- });
+var BookSchema = new Schema({
+  titulo: String,
+  autor: String,
+  paginas: Number,
+  descricao: String
+})
 
- module.exports = mongoose.model('Book', BookSchema);
+module.exports = mongoose.model('Book', BookSchema)
